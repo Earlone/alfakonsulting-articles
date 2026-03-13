@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 причин отказа в лицензии МЧС | АльфаКонсалтинг</title>
+    <style>
+        /* ===== ТВОЙ ОРИГИНАЛЬНЫЙ CSS ===== */
+        :root {
+            --primary-red: #E31E24;
+            --primary-dark: #1A1A2E;
+            --accent-orange: #FF6B35;
+            --light-gray: #F8F9FA;
+            --medium-gray: #E9ECEF;
+            --border-gray: #DEE2E6;
+            --text-dark: #212529;
+            --text-medium: #495057;
+            --text-light: #6C757D;
+            --success-green: #28A745;
+            --warning-yellow: #FFC107;
+            --danger-red: #DC3545;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: var(--text-dark);
+            background: var(--white);
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm 15mm 20mm 15mm;
+            margin: 0 auto;
+            background: var(--white);
+        }
+
+        /* ===== ШАПКА ===== */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 5mm;
+            border-bottom: 2px solid var(--primary-red);
+            margin-bottom: 6mm;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 3mm;
+        }
+
+        .brand {
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .brand span {
+            color: var(--primary-red);
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 9pt;
+            color: var(--text-light);
+        }
+
+        .header-right a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .header-site-social {
+            display: flex;
+            align-items: center;
+            gap: 3mm;
+        }
+
+        .header-social {
+            display: flex;
+            gap: 2mm;
+            align-items: center;
+        }
+
+        .header-social-icon {
+            display: inline-block;
+            line-height: 0;
+            transition: opacity 0.2s;
+        }
+
+        .header-social-icon:hover {
+            opacity: 0.7;
+        }
+
+        .header-social-icon img {
+            width: 14px;
+            height: 14px;
+            display: block;
+        }
+
+        .header-site {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        /* ===== ЗАГОЛОВОК СТАТЬИ ===== */
+        .article-title {
+            margin-bottom: 6mm;
+        }
+
+        .article-title h1 {
+            font-size: 28pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 3mm;
+            line-height: 1.2;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 5mm;
+            color: var(--text-light);
+            font-size: 10pt;
+            border-bottom: 1px solid var(--border-gray);
+            padding-bottom: 3mm;
+            margin-bottom: 5mm;
+        }
+
+        .article-meta span {
+            display: flex;
+            align-items: center;
+            gap: 1mm;
+        }
+
+        /* ===== СОДЕРЖАНИЕ ===== */
+        .article-content {
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .article-content h2 {
+            font-size: 18pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin: 8mm 0 4mm 0;
+            border-left: 4px solid var(--primary-red);
+            padding-left: 3mm;
+        }
+
+        .article-content h3 {
+            font-size: 14pt;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin: 6mm 0 3mm 0;
+        }
+
+        .article-content p {
+            margin-bottom: 3mm;
+            text-align: justify;
+        }
+
+        .article-content ul, .article-content ol {
+            margin: 3mm 0 2mm 5mm;
+        }
+
+        .article-content li {
+            margin-bottom: 1.5mm;
+        }
+
+        .article-content strong {
+            color: var(--primary-red);
+        }
+
+        .info-box {
+            background: var(--light-gray);
+            border-left: 4px solid var(--primary-red);
+            padding: 4mm;
+            margin: 5mm 0;
+            border-radius: 0 2mm 2mm 0;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background: #FFF5F5;
+            border-left: 4px solid var(--danger-red);
+            padding: 4mm;
+            margin: 5mm 0;
+            border-radius: 0 2mm 2mm 0;
+        }
+
+        .table-container {
+            margin: 5mm 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 10pt;
+        }
+
+        table th {
+            background: var(--primary-dark);
+            color: var(--white);
+            font-weight: 600;
+            padding: 2mm;
+            text-align: left;
+        }
+
+        table td {
+            border: 1px solid var(--border-gray);
+            padding: 2mm;
+        }
+
+        table tr:nth-child(even) {
+            background: var(--light-gray);
+        }
+
+        /* ===== EXPERT PANELS (3D ЭФФЕКТ) ===== */
+        .expert-panel {
+            display: flex;
+            align-items: center;
+            gap: 6mm;
+            margin: 10mm 0;
+            padding: 5mm;
+            background: var(--white);
+            border-radius: 4mm;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: visible;
+            border: 1px solid rgba(227, 30, 36, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1;
+        }
+
+        .expert-panel:hover {
+            box-shadow: 0 20px 40px rgba(227, 30, 36, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(227, 30, 36, 0.2);
+        }
+
+        /* Красный полукруг (эффект глубины) */
+        .expert-panel .accent-circle {
+            position: absolute;
+            width: 250px;
+            height: 450px;
+            background: linear-gradient(135deg, rgba(227, 30, 36, 0.1) 0%, transparent 80%);
+            border-radius: 0 250px 250px 0;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -20px;
+            z-index: 0;
+            pointer-events: none;
+            transition: all 0.4s ease;
+        }
+
+        .expert-panel:hover .accent-circle {
+            left: -30px;
+            background: linear-gradient(135deg, rgba(227, 30, 36, 0.15) 0%, transparent 80%);
+        }
+
+        .expert-panel.right .accent-circle {
+            left: auto;
+            right: -20px;
+            border-radius: 250px 0 0 250px;
+            background: linear-gradient(225deg, rgba(227, 30, 36, 0.1) 0%, transparent 80%);
+        }
+
+        .expert-panel.right:hover .accent-circle {
+            right: -30px;
+            background: linear-gradient(225deg, rgba(227, 30, 36, 0.15) 0%, transparent 80%);
+        }
+
+        /* Картинка с 3D-эффектом */
+        .expert-image-wrapper {
+            position: relative;
+            width: 220px;
+            height: 330px;
+            flex-shrink: 0;
+            z-index: 10;
+            border-radius: 4mm;
+            overflow: hidden;
+            box-shadow: 
+                0 15px 30px rgba(227, 30, 36, 0.2),
+                0 0 0 2px white,
+                0 0 0 3px rgba(227, 30, 36, 0.2);
+            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+            transition: all 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+            margin: 5px 0;
+        }
+
+        .expert-panel:hover .expert-image-wrapper {
+            transform: perspective(1000px) rotateY(-2deg) rotateX(2deg) translateZ(15px);
+            box-shadow: 
+                20px 20px 40px rgba(227, 30, 36, 0.25),
+                0 0 0 2px white,
+                0 0 0 3px rgba(227, 30, 36, 0.3);
+        }
+
+        .expert-panel.right:hover .expert-image-wrapper {
+            transform: perspective(1000px) rotateY(2deg) rotateX(2deg) translateZ(15px);
+            box-shadow: 
+                -20px 20px 40px rgba(227, 30, 36, 0.25),
+                0 0 0 2px white,
+                0 0 0 3px rgba(227, 30, 36, 0.3);
+        }
+
+        .expert-image-wrapper::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(227, 30, 36, 0.08);
+            mix-blend-mode: multiply;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .expert-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: blur(0.2px) brightness(1.02);
+            transform: scale(1.02);
+            transition: all 0.4s ease;
+        }
+
+
+
+        .expert-content {
+            flex: 1;
+            position: relative;
+            z-index: 5;
+            transform: translateZ(0);
+            transition: all 0.3s ease;
+        }
+
+        .expert-panel:hover .expert-content {
+            transform: translateX(5px);
+        }
+
+        .expert-panel.right:hover .expert-content {
+            transform: translateX(-5px);
+        }
+
+        .expert-name {
+            font-size: 26pt;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 1mm;
+            line-height: 1.2;
+            text-shadow: 0 2px 5px rgba(227, 30, 36, 0.05);
+        }
+
+        .expert-role {
+            font-size: 12pt;
+            color: var(--primary-red);
+            font-weight: 500;
+            margin-bottom: 4mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid rgba(227, 30, 36, 0.1);
+            padding-bottom: 2mm;
+        }
+
+        .expert-quote {
+            font-size: 11pt;
+            line-height: 1.6;
+            color: var(--text-dark);
+            font-style: normal;
+            padding: 4mm;
+            background: rgba(227, 30, 36, 0.02);
+            border-radius: 0 4mm 4mm 0;
+            border-left: 3px solid var(--primary-red);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+        }
+
+        .expert-panel.right .expert-quote {
+            border-left: none;
+            border-right: 3px solid var(--primary-red);
+            border-radius: 4mm 0 0 4mm;
+        }
+
+        /* Выделенный эксперт (руководитель) */
+        .expert-panel.featured {
+            background: linear-gradient(to right, var(--white), rgba(227, 30, 36, 0.02));
+            border-left: 5px solid var(--primary-red);
+        }
+
+        .expert-panel.featured .expert-name {
+            color: var(--primary-red);
+        }
+
+/* ===== CTA БЛОК В СТИЛЕ ЭКСПЕРТА (УСИЛЕННЫЙ) ===== */
+.cta-section {
+    margin-top: 8mm;
+    padding: 6mm;
+    background: var(--white);
+    border-radius: 4mm;
+    border: 1px solid rgba(227, 30, 36, 0.2);
+    box-shadow: 0 15px 30px rgba(227, 30, 36, 0.05);
+    position: relative;
+    overflow: hidden;
+    color: var(--text-dark);
+    break-inside: avoid;
+}
+
+/* Большой красный полукруг слева (основной) */
+.cta-section::before {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(227, 30, 36, 0.12) 0%, transparent 80%);
+    border-radius: 0 300px 300px 0;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -60px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Средний полукруг справа */
+.cta-section::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    background: linear-gradient(225deg, rgba(227, 30, 36, 0.08) 0%, transparent 80%);
+    border-radius: 200px 0 0 200px;
+    top: 30%;
+    right: -40px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Третий полукруг внизу слева (дополнительный) */
+.cta-section .cta-circle-extra {
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    background: linear-gradient(45deg, rgba(227, 30, 36, 0.06) 0%, transparent 70%);
+    border-radius: 150px 150px 0 0;
+    bottom: 0;
+    left: 20%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.cta-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-header {
+    margin-bottom: 4mm;
+}
+
+.cta-title {
+    font-size: 16pt;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 2mm;
+}
+
+.cta-title span {
+    color: var(--primary-red);
+}
+
+.cta-description {
+    font-size: 10pt;
+    color: var(--text-medium);
+    margin-bottom: 4mm;
+    padding-bottom: 3mm;
+    border-bottom: 1px solid rgba(227, 30, 36, 0.15);
+}
+
+.cta-services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3mm;
+    margin-bottom: 4mm;
+}
+
+.cta-service {
+    text-align: left;
+    padding: 2.5mm;
+    background: rgba(227, 30, 36, 0.02);
+    border-radius: 3mm;
+    transition: all 0.2s;
+    border: 1px solid rgba(227, 30, 36, 0.08);
+}
+
+.cta-service:hover {
+    background: rgba(227, 30, 36, 0.05);
+    border-color: rgba(227, 30, 36, 0.25);
+    transform: translateY(-1px);
+}
+
+.cta-service-title {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 1mm;
+}
+
+.cta-service-title i {
+    color: var(--primary-red);
+    margin-right: 1mm;
+    font-style: normal;
+}
+
+.cta-service-desc {
+    font-size: 9pt;
+    color: var(--text-light);
+    line-height: 1.3;
+}
+
+.cta-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3mm 5mm;
+    margin-top: 3mm;
+    padding-top: 3mm;
+    border-top: 1px solid rgba(227, 30, 36, 0.15);
+    font-size: 9pt;
+}
+
+.cta-feature {
+    display: flex;
+    align-items: center;
+    gap: 1mm;
+    color: var(--text-dark);
+    background: rgba(227, 30, 36, 0.03);
+    padding: 1mm 3mm;
+    border-radius: 3mm;
+    border: 1px solid rgba(227, 30, 36, 0.05);
+}
+
+.cta-feature i {
+    color: var(--primary-red);
+    font-style: normal;
+}
+
+.cta-link {
+    display: inline-block;
+    margin-top: 4mm;
+    padding: 2.5mm 5mm;
+    background: var(--primary-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 3mm;
+    font-size: 10pt;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.cta-link:hover {
+    background: transparent;
+    color: var(--primary-red);
+    border-color: var(--primary-red);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(227, 30, 36, 0.3);
+}
+
+        /* ===== ФУТЕР ===== */
+        .footer {
+            margin-top: 8mm;
+            padding-top: 3mm;
+            border-top: 1px solid var(--border-gray);
+            display: flex;
+            justify-content: space-between;
+            font-size: 8pt;
+            color: var(--text-light);
+        }
+
+        .footer a {
+            color: var(--primary-red);
+            text-decoration: none;
+        }
+
+/* ===== ПЕЧАТЬ ===== */
+@media print {
+    @page {
+        size: A4;
+        margin: 5mm;
+    }
+
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        width: 210mm;
+        font-size: 11pt !important;
+    }
+
+    .page {
+        width: 200mm;
+        min-height: 277mm;
+        padding: 5mm;
+        margin: 0 auto;
+    }
+
+    /* Убираем кнопку */
+    .no-print, .print-button {
+        display: none !important;
+    }
+
+    /* КАРТОЧКИ ЭКСПЕРТОВ НЕ РАЗРЫВАЕМ */
+    .expert-panel {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* ТАБЛИЦЫ НЕ РАЗРЫВАЕМ */
+    table {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* ВСЕ СПИСКИ НЕ РАЗРЫВАЕМ (ГЛАВНОЕ!) */
+    ul, ol {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        margin-bottom: 2mm;
+    }
+
+    /* ЗАГОЛОВКИ НЕ ОТРЫВАЕМ ОТ СПИСКОВ */
+    h2, h3, h4 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* КОНКРЕТНО: ЗАГОЛОВОК h3 + СПИСОК ВСЕГДА ВМЕСТЕ */
+    h3 + ul, h3 + ol {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        break-before: avoid;
+        page-break-before: avoid;
+    }
+
+    /* ВАЖНЫЕ БЛОКИ */
+    .info-box, .warning-box, .cta-section {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+        @media screen {
+            body { background: #E5E5E5; padding: 20px; }
+            .page { box-shadow: 0 0 20px rgba(0,0,0,0.1); margin-bottom: 20px; }
+            .print-button {
+                position: fixed; bottom: 30px; right: 30px;
+                background: var(--primary-red); color: white;
+                border: none; padding: 15px 30px; border-radius: 30px;
+                font-size: 14px; font-weight: 600; cursor: pointer;
+                box-shadow: 0 4px 15px rgba(227, 30, 36, 0.4);
+                z-index: 1000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<button class="print-button no-print" onclick="window.print()">🖨️ Версия для печати</button>
+
+<div class="page">
+    
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="logo-section">
+            <a href="https://alfakonsulting.ru" target="_blank">
+                <img src="logo.svg" alt="АльфаКонсалтинг" style="height: 12mm; width: auto;">
+            </a>
+        </div>
+        <div class="header-right">
+            <div class="header-text">
+                Официальное оформление лицензий МЧС, допусков СРО, регистрация ЭТЛ
+            </div>
+            <div class="header-site-social">
+                <a href="https://alfakonsulting.ru/" target="_blank" class="header-site">alfakonsulting.ru</a>
+                <div class="header-social">
+                    <a href="https://t.me/+GoPj7FyrimozYmRi" target="_blank" class="header-social-icon">
+                        <img src="telegram.svg" alt="Telegram" width="14" height="14">
+                    </a>
+                    <a href="https://max.ru/join/_gN8V_Tx91Seq06VwSGs3dRs9o1MmORjRc6bOMDQuyg" target="_blank" class="header-social-icon">
+                        <img src="max.svg" alt="MAX" width="14" height="14">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ЗАГОЛОВОК СТАТЬИ -->
+    <div class="article-title">
+        <h1>7 причин отказа в лицензии МЧС</h1>
+        <div class="article-meta">
+            <span>📅 12 марта 2026</span>
+            <span>⏱ 5 мин чтения</span>
+            <span>📊 На основе статистики МЧС 2025–2026</span>
+        </div>
+    </div>
+
+    <!-- СОДЕРЖАНИЕ СТАТЬИ -->
+    <div class="article-content">
+        
+        <!-- ВСТУПЛЕНИЕ -->
+        <p class="lead" style="font-size: 12pt; font-weight: 500; margin-bottom: 5mm; color: var(--primary-dark);">
+            В 2025 году МЧС России отказало в выдаче лицензий более чем 2 500 компаниям. 80% отказов пришлось на семь типичных ошибок, которые можно было исправить ещё на стадии подачи заявления. Разбираем каждую причину и объясняем, как её избежать.
+        </p>
+
+        <!-- ЭКСПЕРТ: РОМАН (руководитель отдела) -->
+        <div class="expert-panel featured left">
+            <div class="accent-circle"></div>
+            <div class="expert-image-wrapper">
+                <img src="роман.png" alt="Роман" class="expert-image">
+            </div>
+            <div class="expert-content">
+                <div class="expert-name">Роман</div>
+                <div class="expert-role">Руководитель договорного отдела</div>
+                <div class="expert-quote">
+                    <strong>Важно знать:</strong> Средний срок рассмотрения заявления — 15 рабочих дней. 
+                    При отказе госпошлина (7 500 ₽) не возвращается. Повторная подача возможна только 
+                    после устранения всех замечаний.
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРИЧИНА 1 -->
+        <h2>1. Неполный пакет документов</h2>
+        <p>Самая частая причина отказа (около 35% случаев). Заявители не прикладывают обязательные документы или предоставляют их не в полном объёме.</p>
+        
+        <h3>Что обязательно должно быть:</h3>
+        <ul>
+            <li>Заявление о предоставлении лицензии</li>
+            <li>Копии учредительных документов (устав, ОГРН, ИНН)</li>
+            <li>Копии документов, подтверждающих квалификацию сотрудников</li>
+            <li>Копии документов на оборудование (паспорта, сертификаты, поверка)</li>
+            <li>Копии договоров аренды или свидетельств о праве собственности</li>
+            <li>Квитанция об уплате госпошлины (7 500 ₽)</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p><strong>Важно:</strong> Все копии должны быть заверены подписью руководителя и печатью организации.</p>
+        </div>
+
+        <!-- ПРИЧИНА 2 -->
+        <h2>2. Недостоверные или противоречивые сведения</h2>
+        <p>Около 20% отказов связаны с тем, что информация в заявлении не соответствует документам или реальному положению дел.</p>
+        
+        <h3>Типичные ошибки:</h3>
+        <ul>
+            <li>Несовпадение юридического адреса в заявлении и учредительных документах</li>
+            <li>Указание видов работ, не соответствующих ОКВЭД компании</li>
+            <li>Расхождения в фамилиях, именах, отчествах руководителей и специалистов</li>
+        </ul>
+
+        <!-- ПРИЧИНА 3 -->
+        <h2>3. Несоответствие квалификации персонала требованиям</h2>
+        <p>Для получения лицензии МЧС в штате должно быть минимум <strong>2 специалиста</strong>, соответствующих квалификационным требованиям. При этом не менее <strong>5 лет стажа</strong> у ответственного специалиста.</p>
+        
+        <!-- ЭКСПЕРТ: ДАРИНА -->
+        <div class="expert-panel left">
+            <div class="accent-circle"></div>
+            <div class="expert-image-wrapper">
+                <img src="дарина.png" alt="Дарина" class="expert-image">
+            </div>
+            <div class="expert-content">
+                <div class="expert-name">Дарина</div>
+                <div class="expert-role">Специалист договорного отдела</div>
+                <div class="expert-quote">
+                    «Если в штате нет специалистов с нужным стажем — 
+                    МЧС почти всегда отказывает. Это одна из самых частых проблем.»
+                </div>
+            </div>
+        </div>
+        
+        <h3>Что проверяют:</h3>
+        <ul>
+            <li>Наличие профильного образования (пожарная безопасность, техносферная безопасность)</li>
+            <li>Прохождение переподготовки (не менее 250 часов)</li>
+            <li>Повышение квалификации (не реже 1 раза в 5 лет)</li>
+        </ul>
+
+        <!-- ПРИЧИНА 4 -->
+        <h2>4. Отсутствие или несоответствие оборудования</h2>
+        <p>Лицензиат обязан иметь оборудование, необходимое для выполнения заявленных работ, в исправном состоянии и с действующей поверкой.</p>
+        
+        <!-- ЭКСПЕРТ: СВЕТА -->
+        <div class="expert-panel right">
+            <div class="accent-circle"></div>
+            <div class="expert-image-wrapper">
+                <img src="света.png" alt="Света" class="expert-image">
+            </div>
+            <div class="expert-content">
+                <div class="expert-name">Света</div>
+                <div class="expert-role">Специалист договорного отдела</div>
+                <div class="expert-quote">
+                    «Просроченная поверка оборудования — 
+                    одна из самых обидных причин отказа.»
+                </div>
+            </div>
+        </div>
+        
+        <h3>Требования к оборудованию:</h3>
+        <ul>
+            <li>Наличие в Госреестре средств измерений</li>
+            <li>Актуальные свидетельства о поверке</li>
+            <li>Паспорта и сертификаты соответствия</li>
+        </ul>
+
+        <!-- ПРИЧИНА 5 -->
+        <h2>5. Несоответствие помещений</h2>
+        <p>Помещения, в которых осуществляется лицензируемая деятельность, должны соответствовать санитарным, строительным и противопожарным нормам.</p>
+        
+        <h3>Что проверяют:</h3>
+        <ul>
+            <li>Правоустанавливающие документы (аренда или собственность)</li>
+            <li>Наличие мастерской, склада, рабочих мест</li>
+            <li>Соответствие площади заявленным видам работ</li>
+        </ul>
+
+        <!-- ПРИЧИНА 6 -->
+        <h2>6. Ошибки в заявлении или описи документов</h2>
+        <p>Формальные ошибки — причина около 10% отказов. Любая неточность может стать основанием для отказа.</p>
+        
+        <h3>На что обратить внимание:</h3>
+        <ul>
+            <li>Заполнение всех полей заявления</li>
+            <li>Правильное указание видов работ</li>
+            <li>Наличие описи всех прилагаемых документов</li>
+        </ul>
+
+        <!-- ЭКСПЕРТ: ЛИАНА -->
+        <div class="expert-panel right">
+            <div class="accent-circle"></div>
+            <div class="expert-image-wrapper">
+                <img src="лиана.png" alt="Лиана" class="expert-image">
+            </div>
+            <div class="expert-content">
+                <div class="expert-name">Лиана</div>
+                <div class="expert-role">Специалист договорного отдела</div>
+                <div class="expert-quote">
+                    «Формальные ошибки в описи документов — причина 10% отказов. 
+                    Проверяйте всё до мелочей.»
+                </div>
+            </div>
+        </div>
+
+        <!-- ПРИЧИНА 7 -->
+        <h2>7. Наличие недостоверных сведений в ЕГРЮЛ</h2>
+        <p>МЧС запрашивает данные из ЕГРЮЛ автоматически. Если в реестре есть отметки о недостоверности, это становится основанием для отказа.</p>
+        
+        <h3>Что может быть проблемой:</h3>
+        <ul>
+            <li>Адрес массовой регистрации</li>
+            <li>Руководитель или учредитель — массовый</li>
+            <li>Наличие в реестре недействующих юрлиц</li>
+        </ul>
+
+        <!-- СТАТИСТИКА -->
+        <h2>Статистика отказов 2025 года</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Причина отказа</th>
+                        <th>Доля, %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Неполный пакет документов</td><td>35%</td></tr>
+                    <tr><td>Недостоверные сведения</td><td>20%</td></tr>
+                    <tr><td>Квалификация персонала</td><td>15%</td></tr>
+                    <tr><td>Оборудование</td><td>10%</td></tr>
+                    <tr><td>Ошибки в заявлении</td><td>10%</td></tr>
+                    <tr><td>Помещения</td><td>5%</td></tr>
+                    <tr><td>Проблемы в ЕГРЮЛ</td><td>5%</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ЗАКЛЮЧЕНИЕ -->
+        <h2>Заключение</h2>
+        <p>Большинства отказов можно избежать, если заранее провести аудит документов и устранить типичные ошибки. Самое обидное — когда отказ получают из-за формальных мелочей: неправильно заверенной копии или опечатки в заявлении.</p>
+        
+        <div class="warning-box">
+            <p><strong>Помните:</strong> Госпошлина при отказе не возвращается. А время на повторную подачу — это потерянные недели, а иногда и месяцы.</p>
+        </div>
+
+
+    <!-- CTA БЛОК -->
+    <section class="cta-section">
+        <div class="cta-header">
+            <div class="cta-title">📋 <span>Нужна помощь</span> в подготовке документов?</div>
+            <div class="cta-description">
+                АльфаКонсалтинг — мы проведём аудит вашей компании, проверим документы и поможем получить лицензию с первого раза.
+            </div>
+        </div>
+        
+        <div class="cta-services">
+            <div class="cta-service">
+                <div class="cta-service-title"><i>📋</i> Аудит готовности</div>
+                <div class="cta-service-desc">Проверим документы, персонал, оборудование</div>
+            </div>
+            <div class="cta-service">
+                <div class="cta-service-title"><i>📑</i> Сбор документов</div>
+                <div class="cta-service-desc">Подготовим полный пакет</div>
+            </div>
+            <div class="cta-service">
+                <div class="cta-service-title"><i>👥</i> Кадровый аудит</div>
+                <div class="cta-service-desc">Поможем с переподготовкой</div>
+            </div>
+            <div class="cta-service">
+                <div class="cta-service-title"><i>🚀</i> Подача под ключ</div>
+                <div class="cta-service-desc">Сопровождение до получения</div>
+            </div>
+        </div>
+        
+        <div class="cta-features">
+            <span class="cta-feature"><i>✅</i> Работаем с 2014 года</span>
+            <span class="cta-feature"><i>✅</i> Более 600 успешных лицензий</span>
+            <span class="cta-feature"><i>✅</i> Гарантия в договоре</span>
+        </div>
+        
+        <a href="https://alfakonsulting.ru" target="_blank" class="cta-link">Перейти на сайт →</a>
+
+        <!-- Дополнительный полукруг для CTA -->
+        <div class="cta-circle-extra"></div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div>
+            © 2014-2026 АльфаКонсалтинг | 
+            <a href="https://alfakonsulting.ru/" target="_blank">alfakonsulting.ru</a> | 
+            Актуально на 2026 год
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
